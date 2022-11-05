@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>study basic</title>
+</head>
+<body>
+	<!-- một số thẻ cơ bản -->
+	<div>
+		<!-- tạo ra một khối phân tích riêng biệt dùng để chia các thẻ thành những khối có chung đặc tính -->
+		<h1>h1</h1>
+		<!-- thẻ tiêu đề lớn nhấp và chỉ dc sử dụng 1 lần trông trang web vì có tính nhấn mạnh quang trộng  -->
+		<h2>h2</h2>
+		<h3>h3</h3>
+		<h4>h4</h4>
+		<h5>h5</h5>
+		<h6>h6</h6>
+		<a href="https://google.com" target="_blank" rel="noopener noreforrer">google</a><!-- tạo liên kết link ,href là đường link liên kết đến -->
+		<br> <!-- thẻ xuống dòng -->
+		<img alt="images" src="https://icdn.24h.com.vn/upload/3-2022/images/2022-07-11/21-1657535366-24-width650height650.jpg" /> <!--thẻ tạo ảnh src là link ảnh, alt là từ thay thế khi ko load dc ảnh -->
+		<ol>
+			<!-- danh sách có thứ tự 1 ,2,3 -->
+			<li>1</li>
+			<li>2</li>
+		</ol>
+		<ul>
+			<!-- danh sách ko có thứ tự  -->
+			<li>1</li>
+			<li>2</li>
+
+		</ul>
+
+		<div>
+			<!-- các thẻ này gần giống thẻ div nhằm gom các phần lại  -->
+			<header></header>
+			<!-- phần đầu -->
+			<footer></footer>
+			<!-- phần dưới -->
+			<nav></nav>
+			<!-- thẻ menu -->
+			<main></main>
+			<!-- thẻ xác định phần chính của trang web -->
+			<section>
+				<article></article>
+				<!-- thẻ tượng trưng cho 1 bài viết -->
+			</section>
+			<iframe width="768" height="480"
+				src="https://www.youtube.com/emb ed/g4GBGAo_riE?list=PLd8OdiciAE1SwMCtd6XgYp-ei1or6sb1r"
+				title="[Chương 1] Bài 5: Các thẻ HTML cơ bản phần 2" 
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+			<!-- thẻ nhúng, nhúng các video vào -->
+		</div>
+		<span>abc</span> <br> <strong>abc</strong>
+		<!--  in dậm -->
+		<br> <em>abc</em>
+		<!--  in nghiêng -->
+		<br> <b>abc</b>
+		<!--  in dậm -->
+		<br> <i>abc</i>
+		<!--  in nghiêng -->
+		<br>
+	</div>
+	<!-- sự khác biệt giữa inline và block -->
+	<div>
+	<!-- 
+	thẻ inline: 
+	+thẻ inLỉne sẽ có có độ rộng bằng nội dung mà nó chứa
+	+ nếu có nhiều thẻ inline nằm chung với nhau thì nó sẽ nằm chung một hàng 
+	+ bị hạn chế về css 
+	-->
+	<!-- thẻ block :
+	+ có độ rộng full phần tử chứa nó
+	+ nuế có nhiều thẻ block chung với nhau thì nó sẽ rớt xuống hàng
+	 -->
+	</div>
+	<!-- sự khác biệt giữa id và class -->
+	<div class="a" id="abc">
+	<!-- class: có thể đặt tên trung nhau, sử dụng cho nhiều phần tử giống nhau -->
+	<!-- id: ko dc trùng nhau, nếu đặt trùng nhau thì cái đâu tiên dc tao ra mới có hiều quả , dc sử dụng khi thiết kế riêng cho 1 phần tử  -->
+	</div>
+	
+	<!-- BEM qui tắc đặc tên trông css, BEM: block element modifier -->
+	<div>
+	<!-- 
+	 example:
+	 lapTop : block
+	 keyboard, mouse, touch pad, screen : element
+	 small keyboard,small screen: modifier for element
+	 
+	 => rule: 
+	 + Block__Element--modifier
+	 + Block__Element
+	 + Block__modifier
+	
+	lapTop__Keyboard, LapTop__TouchPad, ...
+	lapTop--small, lapTop--expensive, ...
+	lapTop__touchPad--Smooth, ...
+	-Block: là một khốt hay 1 cái gì đó
+	-emlement: là 1 thàng phần trông block
+	-modifier: là tùy biến(modifier) or tính chất(nature) or miêu tả(describe) về 1 element hay block 	
+	 -->
+	</div>
+	
+	
+</body>
+</html>
